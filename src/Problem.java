@@ -81,7 +81,6 @@ class ProblemBlank extends Problem {
 
         newPanel.add(new JLabel(parts[0]));
         newPanel.add(new JTextArea(1, this.blankWord.length()));
-        newPanel.add(new JLabel(parts[1]));
 
         newPanel.setBorder(new BevelBorder(BevelBorder.RAISED));
 
