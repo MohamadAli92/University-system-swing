@@ -4,8 +4,6 @@ public enum Type {
     Course,
     Exam,
     Problem,
-    Solution,
-    Expert,
     Teacher,
     Student,
 

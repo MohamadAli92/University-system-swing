@@ -14,19 +14,6 @@ public class Main {
         com.formdev.flatlaf.FlatIntelliJLaf.install();
         com.formdev.flatlaf.intellijthemes.FlatArcOrangeIJTheme.setup();
 
-//        for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-//            if ("Nimbus".equals(info.getName())) {
-//                try {
-//                    UIManager.setLookAndFeel(info.getClassName());
-//                } catch (ClassNotFoundException | InstantiationException | IllegalAccessException
-//                        | UnsupportedLookAndFeelException e) {
-//                    // TODO Auto-generated catch block
-//                    e.printStackTrace();
-//                }
-//                break;
-//            }
-//        }
-
 
         JTextField usernameField = new JTextField();
         Object[] message = {
@@ -76,7 +63,6 @@ class WindowEventHandler extends WindowAdapter {
     public void windowClosing(WindowEvent evt) {
         Main.database.saveToFile();
         evt.getWindow().dispose();
-//        System.exit(0);
         Main.main(new String[2]);
     }
 }

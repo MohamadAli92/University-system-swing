@@ -245,8 +245,6 @@ public class Student extends User {
         contentsPanel.add(scrollableTable);
         contentsPanel.add(buttonsPanel);
 
-//        contentsPanel.add(courseTable);
-
         MainFrame.show();
 
     }
@@ -334,31 +332,8 @@ public class Student extends User {
         selectText.setFont(new Font("", Font.BOLD, 26));
         selectPanel.setVisible(true);
 
-        // Update exams
-
-//        JPanel examPanel = new JPanel(new GridBagLayout());
-//
-////        examPanel.setSize(new Dimension(800, 600));
-//        GridBagConstraints gbc = new GridBagConstraints();
-//        gbc.insets = new Insets(20, 0, 0, 0);
-//        gbc.gridwidth = GridBagConstraints.REMAINDER;
-//        gbc.fill = GridBagConstraints.HORIZONTAL;
-//
-//        for (Problem question : printingExam.problems) {
-//
-//            examPanel.add(question.printProblem(), gbc);
-//            examPanel.add(new JSeparator());
-//        }
-//
-//        JButton cancel = new JButton("Go Back");
         JButton submit = new JButton("DONE");
 
-//        cancel.addActionListener(new ActionListener() {
-//            @Override
-//            public void actionPerformed(ActionEvent e) {
-//                attemptOnExam();
-//            }
-//        });
 
         submit.addActionListener(new ActionListener() {
             @Override
