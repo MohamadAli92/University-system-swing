@@ -55,7 +55,7 @@ public class Expert extends User {
 
         // Student button
         JButton studentButton = new JButton("Student");
-        ImageIcon studentIcon = new ImageIcon("student.png");
+        ImageIcon studentIcon = new ImageIcon(getClass().getResource("student.png"));
         studentButton.setIcon(studentIcon);
         studentButton.setIconTextGap(10);
         studentButton.setFont(new Font("Arial", Font.BOLD, 20));
@@ -72,7 +72,7 @@ public class Expert extends User {
 
         // Teacher button
         JButton teacherButton = new JButton("Teacher");
-        ImageIcon teacherIcon = new ImageIcon("teacher.png");
+        ImageIcon teacherIcon = new ImageIcon(getClass().getResource("teacher.png"));
         teacherButton.setIcon(teacherIcon);
         teacherButton.setIconTextGap(10);
         teacherButton.setFont(new Font("Arial", Font.BOLD, 20));
@@ -89,7 +89,7 @@ public class Expert extends User {
 
         // Semester button
         JButton semesterButton = new JButton("Semester");
-        ImageIcon semesterIcon = new ImageIcon("semester.png");
+        ImageIcon semesterIcon = new ImageIcon(getClass().getResource("semester.png"));
         semesterButton.setIcon(semesterIcon);
         semesterButton.setIconTextGap(10);
         semesterButton.setFont(new Font("Arial", Font.BOLD, 20));

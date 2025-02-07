@@ -62,7 +62,7 @@ public class Student extends User {
         selectPanel.setVisible(false);
 
         JButton courseButton = new JButton("Sign up on Course");
-        ImageIcon courseIcon = new ImageIcon("course.png");
+        ImageIcon courseIcon = new ImageIcon(getClass().getResource("course.png"));
         courseButton.setIcon(courseIcon);
         courseButton.setIconTextGap(10);
         courseButton.setFont(new Font("Arial", Font.BOLD, 20));
@@ -79,7 +79,7 @@ public class Student extends User {
 
         // Teacher button
         JButton examButton = new JButton("Attempt an exam");
-        ImageIcon examIcon = new ImageIcon("exam.png");
+        ImageIcon examIcon = new ImageIcon(getClass().getResource("exam.png"));
         examButton.setIcon(examIcon);
         examButton.setIconTextGap(10);
         examButton.setFont(new Font("Arial", Font.BOLD, 20));
